@@ -1,0 +1,80 @@
+@import "config";
+
+// Body
+body {
+  background: $primary-color;
+  font-family: "Lato", Cambria, Calibri, serif;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+
+  &.lg-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Roboto", Helvetica, "Franklin Gothic Medium",
+      "Arial Narrow", Arial, sans-serif;
+    border: 2px solid $secondary-color;
+    padding-top: 2rem;
+    background: $secondary-color;
+  }
+
+  &.sm-heading {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display";
+    background: $secondary-color;
+  }
+}
+
+// Main
+main {
+  min-height: calc(100vh - 200px); // to make footer remain at bottom
+  text-align: center;
+}
+
+// Icons
+.icons {
+  align-items: center;
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+      @include easeOut();
+    }
+  }
+}
+
+// Button
+.btn {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border: 2px solid $third-color;
+  padding: 1rem;
+  margin: 2rem;
+  text-decoration: none;
+  color: $third-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $primary-color;
+    background: $secondary-color;
+    border: none;
+  }
+}
+
+// Footer
+#main-footer {
+  background-color: $third-color;
+  color: $primary-color;
+  text-align: center;
+  padding: 1rem;
+  height: 200px;
+}
