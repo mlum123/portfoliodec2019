@@ -1,3 +1,27 @@
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff; }
+  .menu-nav .nav-item {
+    float: left; }
+    .menu-nav .nav-item.current > a {
+      color: #fff;
+      background-color: #6d9aa8; }
+    .menu-nav .nav-item .nav-link {
+      display: block;
+      color: #6d9aa8;
+      padding: 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.5s ease-out; }
+      .menu-nav .nav-item .nav-link:hover {
+        color: #fff;
+        background-color: #6d9aa8; }
+
 body {
   background: #fff;
   font-family: "Lato", Cambria, Calibri, serif; }
@@ -22,8 +46,13 @@ h3 {
   h3.sm-heading {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", "Lato", Cambria, Calibri, serif;
     background: #b5dbf0; }
+  h1.xs-heading,
+  h2.xs-heading,
+  h3.xs-heading {
+    margin-top: 3rem;
+    padding-top: 2rem; }
 
 main {
   min-height: calc(100vh - 200px);
