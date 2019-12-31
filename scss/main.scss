@@ -81,7 +81,7 @@ main {
   }
 }
 
-// About Page Image
+// About Page
 #about {
   .about-info {
     display: grid;
@@ -90,15 +90,16 @@ main {
       "bio-image quick-facts quick-facts";
     .bio-image {
       margin-top: 1rem;
-      width: 200px;
+      width: 230px;
       height: auto;
-      border: 5px solid $third-color;
+      border: 3px solid $third-color;
     }
     .bio {
       border-top: 2px dashed $third-color;
       border-bottom: 2px dashed $third-color;
+      margin-top: 1rem;
       margin-left: 1rem;
-      padding: 1rem;
+      margin-right: 1rem;
       text-align: left;
     }
   }
@@ -114,6 +115,10 @@ main {
     ul {
       list-style: none;
       text-align: left;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
     }
   }
   .fact {
@@ -123,6 +128,48 @@ main {
 
 .fact {
   background-color: $primary-color;
+}
+
+// Experience Page
+.event {
+  border-top: 2px solid $third-color;
+  border-bottom: 2px solid $third-color;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-areas: "event-image event-info";
+
+  h5 {
+    margin: 0;
+  }
+
+  .event-image {
+    margin-bottom: 1rem;
+  }
+
+  .event-info {
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: $secondary-color;
+
+    h3 {
+      text-decoration: underline;
+    }
+
+    .skills {
+      padding: 1rem;
+      background-color: $primary-color;
+    }
+  }
+
+  .centrify-image {
+    height: 150px;
+    width: auto;
+  }
+
+  .ssp-image {
+    height: 150px;
+    width: auto;
+  }
 }
 
 // Footer
