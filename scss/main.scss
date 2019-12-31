@@ -45,7 +45,7 @@ h3 {
 
 // Main
 main {
-  min-height: calc(100vh - 200px); // to make footer remain at bottom
+  min-height: calc(100vh - 220px); // to make footer remain at bottom
   text-align: center;
 }
 
@@ -197,5 +197,5 @@ main {
   color: $primary-color;
   text-align: center;
   padding: 1rem;
-  height: 200px;
+  height: 220px;
 }
