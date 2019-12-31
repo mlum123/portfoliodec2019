@@ -45,7 +45,7 @@ h3 {
 
 // Main
 main {
-  min-height: calc(100vh - 220px); // to make footer remain at bottom
+  min-height: calc(100vh - 240px); // to make footer remain at bottom
   text-align: center;
 }
 
@@ -191,11 +191,35 @@ main {
   }
 }
 
+// Projects Page
+.project-category {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: lighten($third-color, 20);
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .technical-slide {
+    background: $primary-color;
+
+    img {
+      margin: 1rem;
+    }
+
+    .slide-img {
+      height: 300px;
+      width: auto;
+    }
+  }
+}
+
 // Footer
 #main-footer {
   background-color: $third-color;
   color: $primary-color;
   text-align: center;
   padding: 1rem;
-  height: 220px;
+  height: 240px;
 }
