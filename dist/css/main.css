@@ -90,7 +90,8 @@ main {
   .btn:hover {
     color: #fff;
     background: #b5dbf0;
-    border: none; }
+    border: none;
+    transition: all 0.5s ease-out; }
 
 #about .about-info {
   display: grid;
@@ -143,16 +144,24 @@ main {
   .event .event-info {
     padding: 1rem;
     margin-left: 1rem;
-    background-color: #d7ecf7; }
+    background-color: #d7ecf7;
+    text-align: left; }
     .event .event-info h3 {
       text-decoration: underline; }
-    .event .event-info .skills {
+    .event .event-info .takeaways {
       padding: 1rem;
-      background-color: #fff; }
+      background-color: #fff;
+      text-align: center; }
   .event .centrify-image {
     height: 150px;
     width: auto; }
   .event .ssp-image {
+    height: 150px;
+    width: auto; }
+  .event .cosmos-image {
+    height: 96px;
+    width: auto; }
+  .event .epic-image {
     height: 150px;
     width: auto; }
 

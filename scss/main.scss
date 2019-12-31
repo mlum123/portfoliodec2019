@@ -49,19 +49,19 @@ main {
   text-align: center;
 }
 
-// Icons
+// Icons (LinkedIn)
 .icons {
   align-items: center;
   a {
     color: $secondary-color;
     &:hover {
       color: $primary-color;
-      @include easeOut();
+      @include easeOut;
     }
   }
 }
 
-// Button
+// Home Page About Me Button
 .btn {
   display: inline-block;
   width: 100px;
@@ -78,6 +78,7 @@ main {
     color: $primary-color;
     background: $secondary-color;
     border: none;
+    @include easeOut;
   }
 }
 
@@ -156,14 +157,16 @@ main {
     padding: 1rem;
     margin-left: 1rem;
     background-color: lighten($secondary-color, 8);
+    text-align: left;
 
     h3 {
       text-decoration: underline;
     }
 
-    .skills {
+    .takeaways {
       padding: 1rem;
       background-color: $primary-color;
+      text-align: center;
     }
   }
 
@@ -173,6 +176,16 @@ main {
   }
 
   .ssp-image {
+    height: 150px;
+    width: auto;
+  }
+
+  .cosmos-image {
+    height: 96px;
+    width: auto;
+  }
+
+  .epic-image {
     height: 150px;
     width: auto;
   }
