@@ -18,10 +18,15 @@ h3 {
   &.lg-heading {
     font-size: 3rem;
     text-transform: uppercase;
-    font-family: "Open Sans", "Roboto", Helvetica, "Franklin Gothic Medium",
+    font-family: "Lato", "Roboto", Helvetica, "Franklin Gothic Medium",
       "Arial Narrow", Arial, sans-serif;
     border: 2px solid $secondary-color;
     padding-top: 2rem;
+    background: $secondary-color;
+  }
+
+  &.md-heading {
+    padding: 2rem 0;
     background: $secondary-color;
   }
 
@@ -34,7 +39,7 @@ h3 {
 
   &.xs-heading {
     margin-top: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 }
 
@@ -74,6 +79,50 @@ main {
     background: $secondary-color;
     border: none;
   }
+}
+
+// About Page Image
+#about {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      "bio-image bio bio"
+      "bio-image quick-facts quick-facts";
+    .bio-image {
+      margin-top: 1rem;
+      width: 200px;
+      height: auto;
+      border: 5px solid $third-color;
+    }
+    .bio {
+      border-top: 2px dashed $third-color;
+      border-bottom: 2px dashed $third-color;
+      margin-left: 1rem;
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+}
+
+.quick-facts {
+  background-color: $secondary-color;
+  padding-bottom: 1rem;
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "rundown interests like";
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+  }
+  .fact {
+    margin: 0.5rem;
+  }
+}
+
+.fact {
+  background-color: $primary-color;
 }
 
 // Footer

@@ -1,3 +1,8 @@
+.highlight-text {
+  color: #6d9aa8;
+  font-weight: bold;
+  text-decoration: underline; }
+
 .menu-nav {
   list-style: none;
   margin: 0;
@@ -37,9 +42,14 @@ h3 {
   h3.lg-heading {
     font-size: 3rem;
     text-transform: uppercase;
-    font-family: "Open Sans", "Roboto", Helvetica, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Lato", "Roboto", Helvetica, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     border: 2px solid #b5dbf0;
     padding-top: 2rem;
+    background: #b5dbf0; }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading {
+    padding: 2rem 0;
     background: #b5dbf0; }
   h1.sm-heading,
   h2.sm-heading,
@@ -52,7 +62,7 @@ h3 {
   h2.xs-heading,
   h3.xs-heading {
     margin-top: 3rem;
-    padding-top: 2rem; }
+    padding-top: 1rem; }
 
 main {
   min-height: calc(100vh - 200px);
@@ -81,6 +91,37 @@ main {
     color: #fff;
     background: #b5dbf0;
     border: none; }
+
+#about .about-info {
+  display: grid;
+  grid-template-areas: "bio-image bio bio" "bio-image quick-facts quick-facts"; }
+  #about .about-info .bio-image {
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+    border: 5px solid #6d9aa8; }
+  #about .about-info .bio {
+    border-top: 2px dashed #6d9aa8;
+    border-bottom: 2px dashed #6d9aa8;
+    margin-left: 1rem;
+    padding: 1rem;
+    text-align: left; }
+
+.quick-facts {
+  background-color: #b5dbf0;
+  padding-bottom: 1rem; }
+  .quick-facts .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "rundown interests like"; }
+    .quick-facts .facts ul {
+      list-style: none;
+      text-align: left; }
+  .quick-facts .fact {
+    margin: 0.5rem; }
+
+.fact {
+  background-color: #fff; }
 
 #main-footer {
   background-color: #6d9aa8;
