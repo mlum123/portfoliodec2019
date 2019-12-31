@@ -136,10 +136,14 @@ main {
     margin: 0; }
   .event .event-image {
     margin-bottom: 1rem; }
+    .event .event-image img {
+      margin-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem; }
   .event .event-info {
     padding: 1rem;
     margin-left: 1rem;
-    background-color: #b5dbf0; }
+    background-color: #d7ecf7; }
     .event .event-info h3 {
       text-decoration: underline; }
     .event .event-info .skills {
