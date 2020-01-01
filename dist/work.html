@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/6d8fae640a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gelasio|Gupter|Lato|Open+Sans|Playfair+Display|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Michelle Lum</title>
+  </head>
+  <body>
+    <header>
+      <nav id="menu">
+        <ul id="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              about
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="experience.html" class="nav-link">
+              experience
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link">
+              my work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="involvement.html" class="nav-link">
+              involvement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="projects">
+      <h1 class="md-heading">My Work</h1>
+      <div class="projects-info">
+        <div class="project-category technical-projects">
+          <button class="arrow-left" onclick="plusDivs(-1)">&#10094</button>
+          <button class="arrow-right" onclick="plusDivs(+1)">&#10095</button>
+          <h2>Technical</h2>
+          <div class="technical-slideshow">
+            <div class="technical-slide portfolio-slide">
+              <h3><strong>Portfolio Website</strong></h3>
+              <h5>December 2019 - Present</h5>
+              <div class="slide-img-div">
+                <img
+                  class="slide-img"
+                  src="img/projects/technical/portfoliowebsite.png"
+                  alt="Portfolio Website"
+                />
+              </div>
+              <div class="technical-info">
+                <p>This portfolio website! Using HTML, CSS, Sass, and JavaScript, I built my portfolio website from scratch, so that I could showcase my work. I used Sass, which is then compiled into CSS, for the styling of this website. I used JavaScript to make my website more interactive. The graphic design and layout of this website is also of my own conception.</p>
+              </div>
+            </div>
+            <div class="technical-slide">
+              <h3><strong>Study Cloud Website (Harvey Mudd College)</strong></h3>
+              <h5>September 2019 - Present</h5>
+              <img
+                class="slide-img"
+                src="img/projects/technical/studycloudtopics.png"
+                alt="Study Cloud Website Topics"
+              />
+              <div class="technical-info">
+                <p>I am a front-end developer for the Study Cloud website team at Harvey Mudd College. We are a student-run club that is creating a website called Study Cloud to allow students to share study materials. For Study Cloud, I work mainly with HTML, CSS, and Sass. I am currently working on making the website more aesthetically pleasing, which is a great project for me given my interest in design.</p>
+              </div>
+            </div>
+            <div class="technical-slide">
+              <h3><strong>Astrophysics Research at the Summer Science Program</strong></h3>
+              <h5>June 2018 - July 2018</h5>
+              <img
+                class="slide-img"
+                src="img/projects/technical/odfirstpg.png"
+                alt="Summer Science Program: Orbital Determination of Asteroid 2002 UX"
+              />
+              <img class="slide-img"
+              src="img/projects/technical/odminorplanetcenter.png"
+              alt="Minor Planet Center Data Publication"/>
+              <img class="slide-img"
+              src="img/projects/technical/orbitvisualization.png"
+              alt="Orbital Visualization of 2002 UX"/>
+              <img class="slide-img"
+              src="img/projects/technical/orbitalparameter.png"
+              alt="Orbital Parameters of 2002 UX"/>
+              <div class="technical-info">
+                <p>
+                  As one of 36 students chosen to attend the 2018 Summer Science
+                  Program in Astrophysics in New Mexico, I used Etscorn
+                  Observatory's Celestron-14 telescope to observe near-Earth
+                  asteroid 2002 UX and calculate its position (in right ascension
+                  and declination) throughout the summer. Due to its dimness, 2002
+                  UX was a particularly difficult asteroid to track.
+                </p>
+                <p>
+                  With data collected from observations of the asteroid, I used
+                  Python to determine the asteroid's six orbital elements that
+                  uniquely define its orbit through the iterative Method of Gauss. I
+                  used differential correction to improve calculations of the
+                  orbital elements, and calculated the uncertainties of the orbital
+                  elements with Monte Carlo sampling. I successfully determined the
+                  orbit of 2002 UX, in addition to visualizing its orbit.
+                </p>
+                <p>
+                  Additionally, I used Swift integration software to perform orbital
+                  integration and run multiple simulations to determine what might
+                  happen to 2002 UX after many years. I discovered that 2002 UX had
+                  probabilities of colliding with the Earth, Sun, Venus, and Mars,
+                  which may impact the solar system, as well as the properties of
+                  each of these bodies.
+                </p>
+                <p>
+                  My team published the data we had collected on the positions of
+                  asteroid 2002 UX in the Minor Planet Center Supplement:
+                  <i>
+                    Lum M., Noel A., & Valadez C. 2018, “New Observations of
+                    Near-Earth Asteroid 283729 (2002 UX),” M.P.S. 906049.</i
+                  >
+                </p>
+                <p>
+                  We also used LaTeX to write an 18-page orbit determination report
+                  on how we had collected data on asteroid 2002 UX and determined
+                  its orbit.
+                </p>
+              </div>
+            </div>
+            <div class="technical-slide">
+              <h3><strong>Research at the California State Summer School for Mathematics & Science (COSMOS)
+                UC Davis</strong></h3>
+              <h5>July 2017 - August 2017</h5>
+              <img
+                class="slide-img"
+                src="img/projects/technical/cosmosstm.png"
+                alt="COSMOS Scanning Tunneling Microscope"
+              />
+              <img
+              class="slide-img"
+              src="img/projects/technical/cosmospowersupply.png"
+              alt="COSMOS Scanning Tunneling Microscope Power Supply"
+            />
+            <img
+            class="slide-img"
+            src="img/projects/technical/cosmoscode.png"
+            alt="COSMOS Scanning Tunneling Microscope Code"
+          />
+          <div class="technical-info">
+            <p>At COSMOS UC Davis, I was in Cluster 1: Quantum Mechanics and
+              Applications to Nanotechnology. I learned to program in C and also
+              learned basics in electronics. My time at COSMOS culminated in a
+              final project of building a scanning tunneling microscope (STM) to
+              take 3D images of surfaces at the atomic level. The STM uses the
+              quantum effect of tunneling by applying a voltage between the
+              STM's conducting tip and the surface of the sample being studied.
+              This voltage sends electrons to the sample surface. On the
+              electronics side, I built a 15V power supply. I also used C for
+              the software side of the project. My STM successfully took images
+              of samples at microscopic levels and could be potentially used to
+              conduct more research in the sphere of nanotechnology.</p>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-category design-projects">
+          <h2>Design</h2>
+          <div class="design-slideshow"></div>
+        </div>
+        <div class="project-category photography-projects">
+          <h2>Photography</h2>
+          <div class="photography-slideshow"></div>
+        </div>
+      </div>
+    </main>
+    <footer id="main-footer">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/michelle-lum-a4177518a/">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <!--
+          <a href="#!">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          -->
+      </div>
+      <p>
+        I built this website using HTML, CSS, Sass, and JavaScript.
+      </p>
+      <h4>Acknowledgements</h4>
+      <p>
+        I would like to acknowledge Brad Traversy of Traversy Media for his
+        helpful video guide on creating a responsive website, as well as
+        W3Schools and Codecademy for their useful instruction on HTML, CSS, and
+        JavaScript.
+      </p>
+      <p>&copy; Michelle Lum 2020</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

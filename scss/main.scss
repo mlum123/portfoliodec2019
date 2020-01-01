@@ -191,7 +191,7 @@ main {
   }
 }
 
-// Projects Page
+// My Work Page
 .project-category {
   margin-top: 1rem;
   padding: 1rem;
@@ -201,8 +201,45 @@ main {
     margin-bottom: 0.5rem;
   }
 
+  h3 {
+    padding-top: 1rem;
+  }
+
+  button {
+    width: 50px;
+    height: 25px;
+    background-color: $third-color;
+    color: $primary-color;
+    margin: 0 1rem;
+    margin-top: 27vh;
+    &.arrow-left {
+      float: left;
+    }
+
+    &.arrow-right {
+      float: right;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 4px solid lighten($third-color, 20);
+    }
+  }
+
   .technical-slide {
     background: $primary-color;
+    h3 {
+      margin-bottom: 0.1rem;
+    }
+    h5 {
+      margin-bottom: 0.1rem;
+    }
+
+    .technical-info {
+      border-top: 2px solid $secondary-color;
+      padding: 1rem 1rem;
+      text-align: left;
+    }
 
     img {
       margin: 1rem;
