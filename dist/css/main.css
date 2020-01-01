@@ -173,43 +173,62 @@ main {
     height: 150px;
     width: auto; }
 
-.project-category {
+.technical-projects {
   margin-top: 1rem;
   padding: 1rem;
   background: #adc6ce; }
-  .project-category h2 {
+  .technical-projects h2 {
     margin-bottom: 0.5rem; }
-  .project-category h3 {
+  .technical-projects h3 {
     padding-top: 1rem; }
-  .project-category button {
-    width: 50px;
-    height: 25px;
+  .technical-projects button {
+    width: 60px;
+    height: 40px;
     background-color: #6d9aa8;
     color: #fff;
-    margin: 0 1rem;
-    margin-top: 27vh; }
-    .project-category button.arrow-left {
+    margin: 1rem 1rem; }
+    .technical-projects button.arrow-left {
       float: left; }
-    .project-category button.arrow-right {
+    .technical-projects button.arrow-right {
       float: right; }
-    .project-category button:hover {
+    .technical-projects button:hover {
       cursor: pointer;
       border: 4px solid #adc6ce; }
-  .project-category .technical-slide {
+  .technical-projects .technical-slide {
     background: #fff; }
-    .project-category .technical-slide h3 {
+    .technical-projects .technical-slide h3 {
       margin-bottom: 0.1rem; }
-    .project-category .technical-slide h5 {
+    .technical-projects .technical-slide h5 {
       margin-bottom: 0.1rem; }
-    .project-category .technical-slide .technical-info {
+    .technical-projects .technical-slide .technical-info {
       border-top: 2px solid #b5dbf0;
       padding: 1rem 1rem;
       text-align: left; }
-    .project-category .technical-slide img {
+    .technical-projects .technical-slide img {
       margin: 1rem; }
-    .project-category .technical-slide .slide-img {
+    .technical-projects .technical-slide .slide-img {
       height: 300px;
       width: auto; }
+
+.design-projects {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #adc6ce; }
+  .design-projects h2 {
+    margin-bottom: 0.5rem; }
+  .design-projects h3 {
+    padding-top: 1rem; }
+  .design-projects .design-tile {
+    background-color: #fff;
+    padding-bottom: 1rem;
+    margin: 1rem; }
+    .design-projects .design-tile .design-img {
+      height: 300px;
+      width: auto;
+      margin-right: 1.5rem;
+      margin-top: 1rem; }
+    .design-projects .design-tile .design-info {
+      padding: 1rem 1rem; }
 
 #main-footer {
   background-color: #6d9aa8;

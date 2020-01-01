@@ -191,8 +191,8 @@ main {
   }
 }
 
-// My Work Page
-.project-category {
+// Technical Projects Page
+.technical-projects {
   margin-top: 1rem;
   padding: 1rem;
   background: lighten($third-color, 20);
@@ -205,13 +205,14 @@ main {
     padding-top: 1rem;
   }
 
+  // Technical Slideshow Button Formatting
   button {
-    width: 50px;
-    height: 25px;
+    width: 60px;
+    height: 40px;
     background-color: $third-color;
     color: $primary-color;
-    margin: 0 1rem;
-    margin-top: 27vh;
+    margin: 1rem 1rem;
+
     &.arrow-left {
       float: left;
     }
@@ -226,6 +227,7 @@ main {
     }
   }
 
+  // Technical Slideshow Formatting
   .technical-slide {
     background: $primary-color;
     h3 {
@@ -248,6 +250,38 @@ main {
     .slide-img {
       height: 300px;
       width: auto;
+    }
+  }
+}
+
+// Design Page
+.design-projects {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: lighten($third-color, 20);
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    padding-top: 1rem;
+  }
+
+  .design-tile {
+    background-color: $primary-color;
+    padding-bottom: 1rem;
+    margin: 1rem;
+
+    .design-img {
+      height: 300px;
+      width: auto;
+      margin-right: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .design-info {
+      padding: 1rem 1rem;
     }
   }
 }
