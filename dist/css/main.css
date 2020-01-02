@@ -4,8 +4,6 @@
   text-decoration: underline; }
 
 #menu {
-  position: fixed;
-  z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,10 +30,11 @@
       #menu .nav-item .nav-link:hover {
         color: #fff;
         background-color: #6d9aa8; }
-  #menu .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 body {
   background: #fff;
@@ -132,10 +131,8 @@ main {
       .quick-facts .facts ul li {
         margin-bottom: 0.5rem; }
   .quick-facts .fact {
-    margin: 0.5rem; }
-
-.fact {
-  background-color: #fff; }
+    margin: 0.5rem;
+    background-color: #fff; }
 
 .event {
   border-top: 2px solid #6d9aa8;
@@ -256,6 +253,26 @@ main {
   height: 300px;
   width: auto;
   padding: 5rem; }
+
+.involvement-facts {
+  padding-bottom: 1rem; }
+  .involvement-facts .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "rundown interests like"; }
+  .involvement-facts .fact {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 5px solid #b5dbf0; }
+    .involvement-facts .fact p {
+      text-align: left; }
+  .involvement-facts ul {
+    list-style: none;
+    line-height: 2rem; }
+    .involvement-facts ul p {
+      margin-top: 0;
+      line-height: 0rem; }
 
 #main-footer {
   background-color: #6d9aa8;

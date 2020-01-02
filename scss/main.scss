@@ -124,11 +124,8 @@ main {
   }
   .fact {
     margin: 0.5rem;
+    background-color: $primary-color;
   }
-}
-
-.fact {
-  background-color: $primary-color;
 }
 
 // Experience Page
@@ -315,6 +312,36 @@ main {
   height: 300px;
   width: auto;
   padding: 5rem;
+}
+
+// Involvement Page
+.involvement-facts {
+  padding-bottom: 1rem;
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "rundown interests like";
+  }
+
+  .fact {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 5px solid $secondary-color;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  ul {
+    list-style: none;
+    line-height: 2rem;
+    p {
+      margin-top: 0;
+      line-height: 0rem;
+    }
+  }
 }
 
 // Footer
