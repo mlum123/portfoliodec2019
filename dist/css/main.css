@@ -270,9 +270,24 @@ main {
   .involvement-facts ul {
     list-style: none;
     line-height: 2rem; }
-    .involvement-facts ul p {
+    .involvement-facts ul .lynbrookpara {
       margin-top: 0;
-      line-height: 0rem; }
+      line-height: 0rem;
+      text-align: center; }
+
+.contact-info {
+  border: 2px dashed #6d9aa8;
+  padding: 1rem;
+  margin: 1rem; }
+  .contact-info h3 {
+    margin: 0.5rem; }
+  .contact-info .highlight-text {
+    color: #517a87; }
+  .contact-info .contact-icons a {
+    color: #8bc6e7; }
+    .contact-info .contact-icons a:hover {
+      color: #6d9aa8;
+      transition: all 0.5s ease-out; }
 
 #main-footer {
   background-color: #6d9aa8;

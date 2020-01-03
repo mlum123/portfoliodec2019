@@ -337,13 +337,39 @@ main {
   ul {
     list-style: none;
     line-height: 2rem;
-    p {
+
+    .lynbrookpara {
       margin-top: 0;
       line-height: 0rem;
+      text-align: center;
     }
   }
 }
 
+// Contact Page
+.contact-info {
+  border: 2px dashed $third-color;
+  padding: 1rem;
+  margin: 1rem;
+
+  h3 {
+    margin: 0.5rem;
+  }
+
+  .highlight-text {
+    color: darken($third-color, 12);
+  }
+
+  .contact-icons {
+    a {
+      color: darken($secondary-color, 10);
+      &:hover {
+        color: $third-color;
+        @include easeOut;
+      }
+    }
+  }
+}
 // Footer
 #main-footer {
   background-color: $third-color;
