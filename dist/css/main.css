@@ -248,21 +248,15 @@ main {
   opacity: 1; }
 
 .photo-img {
-  height: 500px;
+  height: 400px;
   width: auto; }
-
-.bolkema-img {
-  transform: rotate(90deg);
-  height: 300px;
-  width: auto;
-  padding: 5rem; }
 
 .involvement-facts {
   padding-bottom: 1rem; }
   .involvement-facts .facts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "rundown interests like"; }
+    grid-template-areas: "classpres womenincs studycloud"; }
   .involvement-facts .fact {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -322,16 +316,12 @@ main {
     margin-right: 0.5rem;
     margin-top: 1rem; }
   .photo-img {
-    height: 200px;
+    height: 280px;
     width: auto; }
-  .bolkema-img {
-    height: 200px;
-    width: auto;
-    padding: 5rem; }
   .involvement-facts .facts {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "rundown" "interests" "like"; }
+    grid-template-areas: "classpres" "womenincs" "studycloud"; }
   .menu-btn {
     position: absolute;
     z-index: 7;

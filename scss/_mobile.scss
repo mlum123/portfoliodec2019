@@ -60,14 +60,8 @@
 
   // Resize photos on Photography Page
   .photo-img {
-    height: 200px;
+    height: 280px;
     width: auto;
-  }
-
-  .bolkema-img {
-    height: 200px;
-    width: auto;
-    padding: 5rem;
   }
 
   // Change grid layout to 1 column on Involvement Page
@@ -76,9 +70,9 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas:
-        "rundown"
-        "interests"
-        "like";
+        "classpres"
+        "womenincs"
+        "studycloud";
     }
   }
 

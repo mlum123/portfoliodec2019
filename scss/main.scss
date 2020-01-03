@@ -306,15 +306,8 @@ main {
 }
 
 .photo-img {
-  height: 500px;
+  height: 400px;
   width: auto;
-}
-
-.bolkema-img {
-  transform: rotate(90deg);
-  height: 300px;
-  width: auto;
-  padding: 5rem;
 }
 
 // Involvement Page
@@ -323,7 +316,7 @@ main {
   .facts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "rundown interests like";
+    grid-template-areas: "classpres womenincs studycloud";
   }
 
   .fact {
