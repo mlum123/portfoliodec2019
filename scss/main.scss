@@ -104,6 +104,13 @@ main {
       text-align: left;
     }
   }
+
+  .highlight-text {
+    text-decoration: none;
+    &:hover {
+      color: $third-color;
+    }
+  }
 }
 
 .quick-facts {
@@ -113,18 +120,32 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "rundown interests like";
-    ul {
-      list-style: none;
-      text-align: left;
 
-      li {
-        margin-bottom: 0.5rem;
+    .fact {
+      margin: 0.5rem;
+      padding-right: 1rem;
+      background-color: $primary-color;
+
+      ul {
+        list-style: none;
+        text-align: left;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          .highlight-text {
+            text-decoration: none;
+          }
+        }
+      }
+
+      // for emphasis on the word blue in the things I like box
+      &.like {
+        .highlight-text {
+          color: darken($secondary-color, 35);
+        }
       }
     }
-  }
-  .fact {
-    margin: 0.5rem;
-    background-color: $primary-color;
   }
 }
 
@@ -355,6 +376,7 @@ main {
 
   .highlight-text {
     color: darken($third-color, 12);
+    text-decoration: none;
   }
 
   .contact-icons {

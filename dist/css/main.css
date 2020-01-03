@@ -2,6 +2,8 @@
   color: #6d9aa8;
   font-weight: bold;
   text-decoration: underline; }
+  .highlight-text:hover {
+    color: #8bc6e7; }
 
 #menu {
   list-style: none;
@@ -118,6 +120,11 @@ main {
     margin-right: 1rem;
     text-align: left; }
 
+#about .highlight-text {
+  text-decoration: none; }
+  #about .highlight-text:hover {
+    color: #6d9aa8; }
+
 .quick-facts {
   background-color: #b5dbf0;
   padding-bottom: 1rem; }
@@ -125,14 +132,19 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "rundown interests like"; }
-    .quick-facts .facts ul {
-      list-style: none;
-      text-align: left; }
-      .quick-facts .facts ul li {
-        margin-bottom: 0.5rem; }
-  .quick-facts .fact {
-    margin: 0.5rem;
-    background-color: #fff; }
+    .quick-facts .facts .fact {
+      margin: 0.5rem;
+      padding-right: 1rem;
+      background-color: #fff; }
+      .quick-facts .facts .fact ul {
+        list-style: none;
+        text-align: left; }
+        .quick-facts .facts .fact ul li {
+          margin-bottom: 0.5rem; }
+          .quick-facts .facts .fact ul li .highlight-text {
+            text-decoration: none; }
+      .quick-facts .facts .fact.like .highlight-text {
+        color: #2990ca; }
 
 .event {
   border-top: 2px solid #6d9aa8;
@@ -280,7 +292,8 @@ main {
   .contact-info h3 {
     margin: 0.5rem; }
   .contact-info .highlight-text {
-    color: #517a87; }
+    color: #517a87;
+    text-decoration: none; }
   .contact-info .contact-icons a {
     color: #8bc6e7; }
     .contact-info .contact-icons a:hover {

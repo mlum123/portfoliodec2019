@@ -10,6 +10,9 @@ $third-color: #6d9aa8;
   color: $third-color;
   font-weight: bold;
   text-decoration: underline;
+  &:hover {
+    color: darken($secondary-color, 10);
+  }
 }
 
 // Media Query Mixins (to make website responsive)
