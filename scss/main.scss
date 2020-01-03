@@ -263,6 +263,8 @@ main {
 
   h3 {
     padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .design-tile {
@@ -273,6 +275,7 @@ main {
     .design-img {
       height: 300px;
       width: auto;
+      margin-left: 1.5rem;
       margin-right: 1.5rem;
       margin-top: 1rem;
     }
@@ -331,6 +334,7 @@ main {
 
     p {
       text-align: left;
+      padding: 0 0.5rem;
     }
   }
 
@@ -378,3 +382,5 @@ main {
   padding: 1rem;
   height: 240px;
 }
+
+@import "mobile";
