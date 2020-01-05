@@ -6,7 +6,7 @@ window.onscroll = function() {
 };
 
 // get navbar
-var navbar = document.getElementById("menu-nav");
+var navbar = document.getElementsByClassName("menu-nav");
 
 // get offset position of navbar
 var sticky = navbar.offsetTop;
@@ -46,8 +46,8 @@ function showDivs(n) {
 // JavaScript to make mobile (responsive) menu button and overlay show/not show
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
-const menuNav = document.querySelector(".menu-nav");
+const menu = document.querySelector("#menu");
+const menuNav = document.querySelector("#menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State of Menu

@@ -1,45 +1,42 @@
-#menu {
+.menu-nav {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow: hidden;
   background-color: $primary-color;
+  margin-top: 0;
+  background-color: $primary-color;
+  list-style: none;
 
-  #menu-nav {
-    margin-top: 0;
-    background-color: $primary-color;
-    list-style: none;
-  }
-
-  .nav-item {
-    float: left;
-
-    &.current > a {
-      color: $primary-color;
-      background-color: $third-color;
-    }
-
-    .nav-link {
-      display: block;
-      color: $third-color;
-      padding: 2.2rem;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      @include easeOut;
-
-      &:hover {
-        color: $primary-color;
-        background-color: $third-color;
-      }
-    }
+  // sticky class is added to navbar with JavaScript when it reaches its scroll position
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
 
-// sticky class is added to navbar with JavaScript when it reaches its scroll position
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.nav-item {
+  float: left;
+
+  &.current > a {
+    color: $primary-color;
+    background-color: $third-color;
+  }
+
+  .nav-link {
+    display: block;
+    color: $third-color;
+    padding: 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $primary-color;
+      background-color: $third-color;
+    }
+  }
 }
