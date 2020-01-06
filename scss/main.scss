@@ -246,6 +246,7 @@ main {
   }
 
   // Slideshow Formatting for Technical Projects & Photography Pages
+  // Somehow adding a div with class slide is how the responsive menu works
   .slide {
     background: $primary-color;
     h3 {
