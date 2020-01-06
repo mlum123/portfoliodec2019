@@ -76,6 +76,11 @@
     width: auto;
   }
 
+  // Show heading telling users to click on photo for description
+  .photo-heading {
+    visibility: visible;
+  }
+
   // Change grid layout to 1 column on Involvement Page
   .involvement-facts {
     .facts {

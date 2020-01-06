@@ -257,6 +257,9 @@ main {
 .slide:hover .photo-overlay {
   opacity: 1; }
 
+.photo-heading {
+  visibility: hidden; }
+
 .photo-img {
   height: 400px;
   width: auto; }
@@ -332,6 +335,8 @@ main {
   .photo-img {
     height: 230px;
     width: auto; }
+  .photo-heading {
+    visibility: visible; }
   .involvement-facts .facts {
     display: grid;
     grid-template-columns: 1fr;
