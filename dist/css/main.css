@@ -321,8 +321,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: "rundown" "interests" "like"; }
   .technical-projects .slide .slide-img {
-    height: 200px;
-    width: auto; }
+    width: 250px;
+    height: auto; }
   .design-projects .design-tile .design-img {
     height: 205px;
     width: auto;
