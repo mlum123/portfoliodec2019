@@ -320,6 +320,38 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "rundown" "interests" "like"; }
+  .event {
+    display: grid;
+    grid-template-areas: "event-image" "event-info"; }
+    .event .event-image {
+      margin-bottom: 1rem; }
+      .event .event-image img {
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem; }
+    .event .event-info {
+      padding: 1rem;
+      margin-left: 0rem;
+      background-color: #d7ecf7;
+      text-align: left; }
+      .event .event-info h3 {
+        text-decoration: underline; }
+      .event .event-info .takeaways {
+        padding: 1rem;
+        background-color: #fff;
+        text-align: center; }
+    .event .centrify-image {
+      height: 150px;
+      width: auto; }
+    .event .ssp-image {
+      height: 150px;
+      width: auto; }
+    .event .cosmos-image {
+      height: 96px;
+      width: auto; }
+    .event .epic-image {
+      height: 150px;
+      width: auto; }
   .technical-projects .slide .slide-img {
     width: 250px;
     height: auto; }

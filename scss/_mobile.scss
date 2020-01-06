@@ -35,6 +35,61 @@
     }
   }
 
+  // Change Experience Page to 1 column grid layout
+  .event {
+    display: grid;
+    grid-template-areas:
+      "event-image"
+      "event-info";
+
+    .event-image {
+      margin-bottom: 1rem;
+
+      img {
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .event-info {
+      padding: 1rem;
+      margin-left: 0rem;
+      background-color: lighten($secondary-color, 8);
+      text-align: left;
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      .takeaways {
+        padding: 1rem;
+        background-color: $primary-color;
+        text-align: center;
+      }
+    }
+
+    .centrify-image {
+      height: 150px;
+      width: auto;
+    }
+
+    .ssp-image {
+      height: 150px;
+      width: auto;
+    }
+
+    .cosmos-image {
+      height: 96px;
+      width: auto;
+    }
+
+    .epic-image {
+      height: 150px;
+      width: auto;
+    }
+  }
+
   // Resize photos on Technical Projects Page
   .technical-projects {
     .slide {
