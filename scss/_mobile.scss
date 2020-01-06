@@ -58,9 +58,21 @@
     }
   }
 
+  // Resize minimalism photo on Design Page
+  .design-projects {
+    .design-tile {
+      .design-img {
+        &.minimalism-img {
+          width: 250px;
+          height: auto;
+        }
+      }
+    }
+  }
+
   // Resize photos on Photography Page
   .photo-img {
-    height: 280px;
+    height: 230px;
     width: auto;
   }
 
@@ -194,24 +206,6 @@
     .nav-item:nth-child(#{$x}) {
       transition-delay: $x * 0.05s;
     }
-  }
-
-  // Resize minimalism photo on Design Page
-  .design-projects {
-    .design-tile {
-      .design-img {
-        &.minimalism-img {
-          width: 100px;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  // Resize photos on Photography Page
-  .photo-img {
-    height: 280px;
-    width: auto;
   }
 
   // Resizing footer for smaller screens
