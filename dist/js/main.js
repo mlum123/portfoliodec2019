@@ -6,7 +6,7 @@ window.onscroll = function() {
 };
 
 // get navbar
-var navbar = document.getElementsByClassName("menu-nav");
+var navbar = document.getElementsByClassName("menu-nav")[0];
 
 // get offset position of navbar
 var sticky = navbar.offsetTop;
