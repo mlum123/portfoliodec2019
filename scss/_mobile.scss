@@ -195,10 +195,7 @@
       transition-delay: $x * 0.05s;
     }
   }
-}
 
-// Smartphones
-@include mediaSm {
   // Resize minimalism photo on Design Page
   .design-projects {
     .design-tile {
@@ -221,4 +218,8 @@
   #main-footer {
     height: 300px;
   }
+}
+
+// Smartphones
+@include mediaSm {
 }

@@ -305,7 +305,7 @@ main {
   padding: 1rem;
   height: 240px; }
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #about .about-info {
     display: grid;
     grid-template-areas: "bio-image" "bio" "quick-facts"; }
@@ -417,9 +417,7 @@ main {
   .nav-item:nth-child(7) {
     transition-delay: 0.35s; }
   .nav-item:nth-child(8) {
-    transition-delay: 0.4s; } }
-
-@media screen and (max-width: 500px) {
+    transition-delay: 0.4s; }
   .design-projects .design-tile .design-img.minimalism-img {
     width: 100px;
     height: auto; }
