@@ -418,3 +418,13 @@ main {
     transition-delay: 0.35s; }
   .nav-item:nth-child(8) {
     transition-delay: 0.4s; } }
+
+@media screen and (max-width: 500px) {
+  .design-projects .design-tile .design-img {
+    height: 160px;
+    width: auto; }
+  .photo-img {
+    height: 280px;
+    width: auto; }
+  #main-footer {
+    height: 300px; } }
