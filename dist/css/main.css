@@ -421,7 +421,7 @@ main {
 
 @media screen and (max-width: 500px) {
   .design-projects .design-tile .design-img.minimalism-img {
-    height: 160px;
+    height: 100px;
     width: auto; }
   .photo-img {
     height: 280px;
