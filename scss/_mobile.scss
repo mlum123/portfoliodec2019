@@ -78,12 +78,17 @@
 
   // Menu Button
   .menu-btn {
-    position: absolute;
-    z-index: 7;
     right: 35px;
     top: 35px;
     cursor: pointer;
     @include easeOut;
+
+    // sticky class is added to navbar with JavaScript when it reaches its scroll position
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 
     .btn-line {
       width: 28px;
@@ -95,12 +100,14 @@
 
     // Rotate Into X With Menu Lines
     &.close {
+      position: absolute;
+      z-index: 7;
       transform: rotate(180deg);
 
       .btn-line {
         // Line 1 - Rotate
         &:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(9px, 10px);
         }
 
         // Line 2 - Hide
@@ -110,7 +117,7 @@
 
         // Line 3 - Rotate
         &:nth-child(3) {
-          transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(2px, -2px);
         }
       }
     }
@@ -161,10 +168,10 @@
     }
   }
 
-  // Delay each nav item slide by 0.1s
+  // Delay each nav item slide by 0.05s
   @for $x from 1 through 8 {
     .nav-item:nth-child(#{$x}) {
-      transition-delay: $x * 0.1s;
+      transition-delay: $x * 0.05s;
     }
   }
 }

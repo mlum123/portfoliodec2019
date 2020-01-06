@@ -5,18 +5,30 @@ window.onscroll = function() {
   stickyFunction();
 };
 
-// get navbar
+// get regular navbar
 var navbar = document.getElementsByClassName("menu-nav")[0];
 
-// get offset position of navbar
-var sticky = navbar.offsetTop;
+// get mobile navbar
+var mobilenavbar = document.getElementsByClassName("menu-btn")[0];
+
+// get offset position of regular navbar
+var stickyNavBar = navbar.offsetTop;
+
+// get offset position of mobile navbar
+var stickyMobileNavBar = mobilenavbar.offsetTop;
 
 // add sticky class to navbar when you reach its scroll position; remove sticky class when you leave scroll position
 function stickyFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= stickyNavBar) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
+  }
+
+  if (window.pageYOffset >= stickyMobileNavBar) {
+    mobilenavbar.classList.add("sticky");
+  } else {
+    mobilenavbar.classList.remove("sticky");
   }
 }
 
@@ -46,8 +58,8 @@ function showDivs(n) {
 // JavaScript to make mobile (responsive) menu button and overlay show/not show
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector("#menu");
-const menuNav = document.querySelector("#menu-nav");
+const menu = document.querySelector(".menu");
+const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State of Menu

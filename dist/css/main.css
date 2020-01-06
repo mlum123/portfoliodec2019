@@ -13,7 +13,6 @@
   overflow: hidden;
   background-color: #fff;
   margin-top: 0;
-  background-color: #fff;
   list-style: none; }
   .menu-nav.sticky {
     position: fixed;
@@ -335,12 +334,14 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: "classpres" "womenincs" "studycloud"; }
   .menu-btn {
-    position: absolute;
-    z-index: 7;
     right: 35px;
     top: 35px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
+    .menu-btn.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%; }
     .menu-btn .btn-line {
       width: 28px;
       height: 3px;
@@ -348,13 +349,15 @@ main {
       background: #6d9aa8;
       transition: all 0.5s ease-out; }
     .menu-btn.close {
+      position: absolute;
+      z-index: 7;
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px); }
+        transform: rotate(45deg) translate(9px, 10px); }
       .menu-btn.close .btn-line:nth-child(2) {
         opacity: 0; }
       .menu-btn.close .btn-line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px); }
+        transform: rotate(-45deg) translate(2px, -2px); }
   .menu-nav {
     position: fixed;
     top: 0;
@@ -384,18 +387,18 @@ main {
         color: #fff;
         background-color: #6d9aa8; }
   .nav-item:nth-child(1) {
-    transition-delay: 0.1s; }
+    transition-delay: 0.05s; }
   .nav-item:nth-child(2) {
-    transition-delay: 0.2s; }
+    transition-delay: 0.1s; }
   .nav-item:nth-child(3) {
-    transition-delay: 0.3s; }
+    transition-delay: 0.15s; }
   .nav-item:nth-child(4) {
-    transition-delay: 0.4s; }
+    transition-delay: 0.2s; }
   .nav-item:nth-child(5) {
-    transition-delay: 0.5s; }
+    transition-delay: 0.25s; }
   .nav-item:nth-child(6) {
-    transition-delay: 0.6s; }
+    transition-delay: 0.3s; }
   .nav-item:nth-child(7) {
-    transition-delay: 0.7s; }
+    transition-delay: 0.35s; }
   .nav-item:nth-child(8) {
-    transition-delay: 0.8s; } }
+    transition-delay: 0.4s; } }
