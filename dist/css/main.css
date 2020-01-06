@@ -420,7 +420,7 @@ main {
     transition-delay: 0.4s; } }
 
 @media screen and (max-width: 500px) {
-  .design-projects .design-tile .design-img {
+  .design-projects .design-tile .design-img.minimalism-img {
     height: 160px;
     width: auto; }
   .photo-img {

@@ -199,12 +199,14 @@
 
 // Smartphones
 @include mediaSm {
-  // Resize photos on Design Page
+  // Resize minimalism photo on Design Page
   .design-projects {
     .design-tile {
       .design-img {
-        height: 160px;
-        width: auto;
+        &.minimalism-img {
+          height: 160px;
+          width: auto;
+        }
       }
     }
   }
