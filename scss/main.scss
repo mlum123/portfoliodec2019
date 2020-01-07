@@ -360,10 +360,33 @@ main {
     text-align: center;
     border: 5px solid $secondary-color;
 
-    p {
+    .involvement-title {
+      padding: 1rem;
+      bottom: 2.5rem;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.6); // Black see-through
+      color: #f1f1f1;
+      width: calc(100vh-2rem);
+      @include easeOut;
+      opacity: 1;
+      color: white;
+      text-align: center;
+
+      h3 {
+        padding-top: 1rem;
+      }
+    }
+
+    .involvement-description {
+      visibility: hidden;
       text-align: left;
       padding: 0 0.5rem;
     }
+  }
+
+  // when you mouse over the involvement panel, fade in the overlay (caption)
+  .fact:hover .involvement-description {
+    visibility: visible;
   }
 
   ul {
