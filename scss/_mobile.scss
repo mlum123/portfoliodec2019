@@ -146,6 +146,9 @@
         "womenincs"
         "studycloud";
     }
+    .small-info {
+      visibility: hidden;
+    }
   }
 
   // Menu Button
@@ -192,7 +195,7 @@
         background: none;
         top: 0;
         height: 40px;
-        width: 100%;
+        width: 35px;
         top: 22px;
         right: 18px;
       }

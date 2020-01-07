@@ -123,7 +123,7 @@ main {
 
     .fact {
       margin: 0.5rem;
-      padding-right: 1rem;
+      padding: 0.5rem;
       background-color: $primary-color;
 
       ul {
@@ -230,6 +230,7 @@ main {
     background-color: $third-color;
     color: $primary-color;
     margin: 1rem 1rem;
+    border: 0px;
 
     &.arrow-left {
       float: left;
@@ -260,6 +261,14 @@ main {
       border-top: 2px solid $secondary-color;
       padding: 1rem 1rem;
       text-align: left;
+      .takeaways {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        background-color: $primary-color;
+        border: 2px solid $secondary-color;
+        text-align: center;
+      }
     }
 
     img {
