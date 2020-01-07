@@ -363,8 +363,7 @@ main {
     .involvement-title {
       padding: 1rem;
       bottom: 2.5rem;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.6); // Black see-through
+      background-color: $third-color; // Black see-through
       color: #f1f1f1;
       width: calc(100vh-2rem);
       @include easeOut;
@@ -378,15 +377,9 @@ main {
     }
 
     .involvement-description {
-      visibility: hidden;
       text-align: left;
       padding: 0 0.5rem;
     }
-  }
-
-  // when you mouse over the involvement panel, fade in the overlay (caption)
-  .fact:hover .involvement-description {
-    visibility: visible;
   }
 
   ul {
